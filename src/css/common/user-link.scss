@@ -1,0 +1,26 @@
+.user-link {
+  display: flex;
+  align-items: center;
+
+  &__photo {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &_header {
+      width: 32px;
+      height: 32px;
+    }
+
+    &_menu-sidebar {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__text {
+    margin-left: 8px;
+  }
+}

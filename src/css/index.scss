@@ -1,0 +1,14 @@
+@use "./other/variables.css";
+@use "./other/normalize.css";
+@use "./other/overall.css";
+@use "./other/fonts.css";
+
+@use "./common/search.scss";
+@use "./common/navigation.scss";
+@use "./common/notification.scss";
+@use "./common/user-link.scss";
+
+@use "./components/header.scss";
+@use "./components/menu-sidebar.scss";
+@use "./components/main.scss";
+@use "./components/aside.scss";

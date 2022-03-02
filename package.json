@@ -1,0 +1,15 @@
+{
+  "name": "intensive-html-coding-social-network",
+  "version": "1.0.0",
+  "description": "Интенсив верстка соцсети",
+  "main": "index.html",
+  "author": "SkyHobbit",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.49.8"
+  },
+  "scripts": {
+    "watch-css" : "sass --no-source-map --watch ./src/css/index.scss style.css"
+  }
+}
