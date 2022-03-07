@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SF Pro Display";
+  background-color: var(--background-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1206px;
+  margin: 0 auto;
+}
+
+.content {
+  height: calc(100vh - 48px);
+  display: grid;
+  grid-template-columns: 192px 1fr 384px;
+  grid-gap: 18px;
+  padding-top: 15px;
+}
+
+.content-block {
+  background: #ffffff;
+  box-shadow: 0px 2px 8px var(--shadow-color);
+  border-radius: 4px;
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

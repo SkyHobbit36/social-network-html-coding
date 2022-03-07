@@ -1,0 +1,54 @@
+%button {
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.see-more-button {
+  @extend %button;
+  background-color: transparent;
+  padding: 4px 0;
+  padding-left: 39px;
+  border-radius: 4px;
+
+  background-image: url("./img/down-arrow.svg");
+  background-repeat: no-repeat;
+  background-position-x: 13px;
+  background-position-y: center;
+
+  &:hover {
+    background-color: var(--secondary-theme-color);
+    color: var(--button-active-color);
+  }
+}
+
+.default-button {
+  @extend %button;
+
+  color: var(--main-text-color);
+  background: var(--background-color);
+  fill: var(--secondary-theme-color);
+
+  &:hover {
+    background-color: var(--secondary-theme-color);
+    color: var(--button-active-color);
+    fill: var(--button-active-color);
+  }
+}
+
+.secondary-button {
+  @extend %button;
+
+  background-color: transparent;
+  color: var(--main-text-color);
+  fill: var(--main-text-color);
+  border-radius: 48px;
+
+  &:hover {
+    background-color: var(--main-text-color);
+    color: var(--button-active-color);
+
+    fill: var(--button-active-color);
+  }
+}

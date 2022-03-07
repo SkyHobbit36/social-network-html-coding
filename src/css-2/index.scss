@@ -1,12 +1,14 @@
-@use "./other/variables.css";
-@use "./other/normalize.css";
-@use "./other/overall.css";
-@use "./other/fonts.css";
+@use "./other/variables.scss";
+@use "./other/normalize.scss";
+@use "./other/overall.scss";
+@use "./other/fonts.scss";
 
 @use "./common/search.scss";
 @use "./common/navigation.scss";
 @use "./common/notification.scss";
 @use "./common/user-link.scss";
+@use "./common/buttons.scss";
+@use "./common/post.scss";
 
 @use "./components/header.scss";
 @use "./components/menu-sidebar.scss";
