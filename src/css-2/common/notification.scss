@@ -20,16 +20,16 @@
 
     &:last-child {
       padding-left: 12px;
-      border-left: 1px solid #003a8c;
+      border-left: 1px solid var(--separators-color);
     }
 
     &:hover .notification__img {
-      fill: white;
+      fill: var(--button-active-color);
     }
   }
 
   &__img {
-    fill: #0006;
+    fill: var(--header-icons-color);
   }
 
   &__count {

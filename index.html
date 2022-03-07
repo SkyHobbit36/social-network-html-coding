@@ -20,9 +20,9 @@
             <div class="header__navigation navigation">
                 <ul class="navigation__list">
                     <li class="header__navigation-item">
-                        <a href="#" class="header__user-link user-link" title="Profile page link">
+                        <a href="#" class="header__user-link user-link" title="Ссылка на страницу пользователя">
                             <span class="user-link__photo user-link__photo_header">
-                                <img src="./img/user-icon.svg" alt="">
+                                <img src="./img/user-icon.svg" alt="Фотография пользователя">
                             </span>
                             <span class="user-link__text">Mateusz</span>
                         </a>
@@ -79,9 +79,9 @@
     
     <div class="content container">
         <nav class="menu-sidebar navigation">
-            <a href="#" class=" menu-sidebar__user-link user-link" title="Profile page link">
+            <a href="#" class=" menu-sidebar__user-link user-link" title="Ссылка на страницу пользователя">
                 <span class="user-link__photo user-link__photo_menu-sidebar">
-                    <img src="./img/user-icon.svg" alt="">
+                    <img src="./img/user-icon.svg" alt="Фотография пользователя">
                 </span>
                 <span class="user-link__text">Mateusz Wierzbicki</span>
             </a>
@@ -165,15 +165,67 @@
                     </li>
                 </ul>
             </section>
-            <div class="menu-sidebar__see-more">
-                <svg width="11" height="7" class="menu-sidebar__icon">
-                    <use xlink:href="./img/icons.svg#down-arrow"></use>
-                </svg>
-                <span class="menu-sidebar__see-more-text">See more...</span>
-            </div>
+            <button class="menu-sidebar__see-more see-more-button">See more...</button>
         </nav>
 
-        <main class="main"></main>
+        <main class="main">
+            <section class="create-post content-block">
+                <h1 class="create-post__header">Create post</h1>
+                <div class="create-post__main">
+                    <img src="./img/user-icon.svg" class="create-post__photo" alt="Фотография пользователя">
+                    <div class="create-post__textarea" contenteditable="true">What’s on your mind, Mateusz?</div>
+                </div>
+                <footer class="create-post__footer">
+                    <button class="create-post__action default-button">
+                        <svg class="create-post__action-icon">
+                            <use xlink:href="./img/icons.svg#photo"></use>
+                        </svg>
+                        <span class="create-post__action-text">Photo/Video</span>
+                    </button>
+                    <button class="create-post__action default-button">
+                        <svg class="create-post__action-icon">
+                            <use xlink:href="./img/icons.svg#add-friend"></use>
+                        </svg>
+                        <span class="create-post__action-text">Tag friends</span>
+                    </button>
+                    <button class="create-post__action default-button">
+                        <svg class="create-post__action-icon">
+                            <use xlink:href="./img/icons.svg#smile"></use>
+                        </svg>
+                        <span class="create-post__action-text">Feeling/Activ...</span>
+                    </button>
+                    <button class="create-post__action default-button">
+                        <svg class="create-post__action-icon create-post__action-icon_points">
+                            <use xlink:href="./img/icons.svg#points"></use>
+                        </svg>
+                    </button>
+                </footer>
+            </section>
+
+            <article class="post-preview content-block">
+                <h1 class="visually-hidden"></h1>
+                <header class="post-preview__header post-header">
+                    <div class="content-title">
+                        <img class="content-title__image post-header__image" src="./img/user-icon.svg" alt="Фотография пользователя">
+                        <h2 class="content-title__primary">Mateusz Wierzbicki</h2>
+                        <span class="content-title__secondary">
+                            <span class="post-header__time">3 hrs</span>
+                            <button class="post-header__time-options secondary-button" aria-label="Кнопка настройки отображения времени поста">
+                                <svg class="post-header__time-options-icon">
+                                    <use xlink:href="./img/icons.svg#gear"></use>
+                                </svg>
+                            </button>
+                        </span>
+                        <button class="secondary-button" aria-label="Кнопка настройки отображения поста">
+                            <svg>
+                                <use xlink:href="./img/icons.svg#points"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </header>
+            </article>
+        </main>
+
         <aside class="aside"></aside>
     </div>
     
