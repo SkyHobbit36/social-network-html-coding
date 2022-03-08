@@ -2,23 +2,27 @@
   display: flex;
   align-items: center;
 
+  // .user-link__photo
+
   &__photo {
+    display: flex;
+    align-items: center;
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
-    &_header {
-      width: 32px;
-      height: 32px;
-    }
+    // .user-link__photo_menu-sidebar
 
     &_menu-sidebar {
       width: 24px;
       height: 24px;
     }
   }
+
+  // .user-link__text
 
   &__text {
     margin-left: 8px;

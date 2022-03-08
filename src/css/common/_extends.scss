@@ -1,8 +1,15 @@
-.navigation {
+%navigation {
   ul {
+    display: flex;
+    align-items: center;
     list-style-type: none;
     padding: 0;
     margin: 0;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
   }
 
   a {
@@ -11,16 +18,5 @@
     &:hover {
       text-decoration: underline;
     }
-  }
-
-  &__list {
-    display: flex;
-    align-items: center;
-  }
-
-  &__item {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
   }
 }
