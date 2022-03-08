@@ -10,6 +10,6 @@
     "sass": "^1.49.8"
   },
   "scripts": {
-    "watch-css" : "sass --no-source-map --watch ./src/css/index.scss style.css"
+    "watch-css": "sass --no-source-map --watch ./src/css/main.scss style.css"
   }
 }

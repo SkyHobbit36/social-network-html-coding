@@ -1,16 +1,17 @@
 .notification {
+  @extend %navigation;
+
   display: flex;
   align-items: center;
+
+  // .notification__list
 
   &__list {
     display: flex;
     align-items: center;
   }
 
-  &__link {
-    display: flex;
-    align-items: center;
-  }
+  // .notification__item
 
   &__item {
     margin-left: 16px;
@@ -28,9 +29,20 @@
     }
   }
 
+  // .notification__link
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  // .notification__img
+
   &__img {
     fill: var(--header-icons-color);
   }
+
+  // .notification__count
 
   &__count {
     width: 20px;
@@ -47,12 +59,16 @@
     top: -50%;
     left: 50%;
 
-    &_info {
-      left: 40%;
-    }
+    // .notification__count_empty
 
     &_empty {
       display: none;
+    }
+
+    // .notification__count_info
+
+    &_info {
+      left: 40%;
     }
   }
 }

@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Интенсив верстка соцсети</title>
+    <title>Верстка соцсети</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="./src/js/index.js"></script>
 </head>
+
 <body>
     <header class="header">
         <div class="container header__container">
-            <div class="search">
+            <div class="header__search search">
                 <form action="#" class="search__form" role="search">
-                    <input type="search" placeholder="Search" class="search__input" inputmode="search">
+                    <input type="search" placeholder="Поиск" class="search__input" inputmode="search">
                     <button type="submit" class="search__button"></button>
-                </form> 
+                </form>
             </div>
-            <div class="header__navigation navigation">
-                <ul class="navigation__list">
-                    <li class="header__navigation-item">
-                        <a href="#" class="header__user-link user-link" title="Ссылка на страницу пользователя">
+            <div class="header-navigation">
+                <ul class="header-navigation__list">
+                    <li class="header-navigation__item">
+                        <a href="#" class="user-link" title="Страница пользователя">
                             <span class="user-link__photo user-link__photo_header">
                                 <img src="./img/user-icon.svg" alt="Фотография пользователя">
                             </span>
-                            <span class="user-link__text">Mateusz</span>
+                            <span class="user-link__text">Павел</span>
                         </a>
                     </li>
-                    <li class="header__navigation-item">
-                        <a href="#">Home</a>
+                    <li class="header-navigation__item">
+                        <a href="#">Домой</a>
                     </li>
-                    <li class="header__navigation-item">
-                        <a href="#">Create</a>
+                    <li class="header-navigation__item">
+                        <a href="#">Создать</a>
                     </li>
                 </ul>
 
                 <div class="notification">
                     <ul class="notification__list">
                         <li class="notification__item">
-                            <a href="#" class="notification__link" title="">
+                            <a href="#" class="notification__link" title="Список пользователей">
                                 <svg width="20" height="20" class="notification__img">
                                     <use xlink:href="./img/icons.svg#users"></use>
                                 </svg>
@@ -46,7 +48,7 @@
                             <div class="notification__count">1</div>
                         </li>
                         <li class="notification__item">
-                            <a href="#">
+                            <a href="#" class="notification__link" title="Мои сообщения">
                                 <svg width="22" height="22" class="notification__img">
                                     <use xlink:href="./img/icons.svg#messages"></use>
                                 </svg>
@@ -54,7 +56,7 @@
                             <div class="notification__count notification__count_empty">6</div>
                         </li>
                         <li class="notification__item">
-                            <a href="#">
+                            <a href="#" class="notification__link" title="Оповещения">
                                 <svg width="16" height="22" class="notification__img">
                                     <use xlink:href="./img/icons.svg#bell"></use>
                                 </svg>
@@ -62,7 +64,7 @@
                             <div class="notification__count">2</div>
                         </li>
                         <li class="notification__item">
-                            <a href="#">
+                            <a href="#" class="notification__link" title="Информация">
                                 <svg width="44" height="24" class="notification__img">
                                     <use xlink:href="./img/icons.svg#info"></use>
                                 </svg>
@@ -76,59 +78,60 @@
         </div>
     </header>
 
-    
+
     <div class="content container">
-        <nav class="menu-sidebar navigation">
-            <a href="#" class=" menu-sidebar__user-link user-link" title="Ссылка на страницу пользователя">
+        <nav class="menu-sidebar">
+            <a href="#" class=" menu-sidebar__user-link user-link" title="Страница пользователя">
                 <span class="user-link__photo user-link__photo_menu-sidebar">
                     <img src="./img/user-icon.svg" alt="Фотография пользователя">
                 </span>
-                <span class="user-link__text">Mateusz Wierzbicki</span>
+                <span class="user-link__text">Павел Ширяев</span>
             </a>
             <section class="menu-sidebar__group menu-sidebar__group_first">
-                <ul class="navigation__list menu-sidebar__list">
-                    <li class="navigation__item menu-sidebar__item menu-sidebar__item_active">
+                <h1 class="menu-sidebar__title visually-hidden">Основное меню</h1>
+                <ul class="menu-sidebar__list">
+                    <li class="menu-sidebar__item menu-sidebar__item_active">
                         <svg width="24" height="24" class="menu-sidebar__icon">
                             <use xlink:href="./img/icons.svg#news"></use>
                         </svg>
-                        <a href="#">News Feed</a>
+                        <a href="#">Новости</a>
                     </li>
-                    <li class="navigation__item menu-sidebar__item">
+                    <li class="menu-sidebar__item">
                         <svg width="21" height="21" class="menu-sidebar__icon">
                             <use xlink:href="./img/icons.svg#messages"></use>
                         </svg>
-                        <a href="#">Messages</a>
+                        <a href="#">Сообщения</a>
                     </li>
-                    <li class="navigation__item menu-sidebar__item">
+                    <li class="menu-sidebar__item">
                         <svg width="20" height="20" class="menu-sidebar__icon">
                             <use xlink:href="./img/icons.svg#market"></use>
                         </svg>
-                        <a href="#">Marketplace</a>
+                        <a href="#">Реклама</a>
                     </li>
                 </ul>
             </section>
             <section class="menu-sidebar__group">
-                <h1>Shortcuts</h1>
-                <ul class="navigation__list menu-sidebar__list">
-                    <li class="navigation__item menu-sidebar__item">
+                <h1 class="menu-sidebar__title">Ярлыки</h1>
+                <ul class="menu-sidebar__list">
+                    <li class="menu-sidebar__item">
                         <svg width="19" height="19" class="menu-sidebar__icon">
                             <use xlink:href="./img/icons.svg#cup"></use>
                         </svg>
-                        <a href="#">Product Design</a>
+                        <a href="#">Дизайн продукты</a>
                     </li>
-                    <li class="navigation__item menu-sidebar__item">
+                    <li class="menu-sidebar__item">
                         <svg width="19" height="19" class="menu-sidebar__icon">
                             <use xlink:href="./img/icons.svg#cup"></use>
                         </svg>
-                        <a href="#">UX & UI</a>
+                        <a href="#">UX и UI</a>
                     </li>
-                    <li class="navigation__item menu-sidebar__item">
+                    <li class="menu-sidebar__item">
                         <svg width="19" height="19" class="menu-sidebar__icon">
                             <use xlink:href="./img/icons.svg#cup"></use>
                         </svg>
                         <a href="#">Figma</a>
                     </li>
-                    <li class="navigation__item menu-sidebar__item">
+                    <li class="menu-sidebar__item">
                         <svg width="19" height="19" class="menu-sidebar__icon">
                             <use xlink:href="./img/icons.svg#cup"></use>
                         </svg>
@@ -137,27 +140,27 @@
                 </ul>
             </section>
             <section class="menu-sidebar__group">
-                <h1>Explore</h1>
-                <ul class="navigation__list menu-sidebar__list">
-                    <li class="navigation__item menu-sidebar__item">
+                <h1 class="menu-sidebar__title">Explore</h1>
+                <ul class="menu-sidebar__list">
+                    <li class="menu-sidebar__item">
                         <svg width="19" height="19" class="menu-sidebar__icon">
                             <use xlink:href="./img/icons.svg#flags"></use>
                         </svg>
                         <a href="#">Pages</a>
                     </li>
-                    <li class="navigation__item menu-sidebar__item">
+                    <li class="menu-sidebar__item">
                         <svg width="18" height="18" class="menu-sidebar__icon">
                             <use xlink:href="./img/icons.svg#headphones"></use>
                         </svg>
                         <a href="#">Groups</a>
                     </li>
-                    <li class="navigation__item menu-sidebar__item">
+                    <li class="menu-sidebar__item">
                         <svg width="22" height="22" class="menu-sidebar__icon">
                             <use xlink:href="./img/icons.svg#house"></use>
                         </svg>
                         <a href="#">Events</a>
                     </li>
-                    <li class="navigation__item menu-sidebar__item">
+                    <li class="menu-sidebar__item">
                         <svg width="18" height="22" class="menu-sidebar__icon">
                             <use xlink:href="./img/icons.svg#rocket"></use>
                         </svg>
@@ -206,11 +209,13 @@
                 <h1 class="visually-hidden"></h1>
                 <header class="post-preview__header post-header">
                     <div class="content-title">
-                        <img class="content-title__image post-header__image" src="./img/user-icon.svg" alt="Фотография пользователя">
+                        <img class="content-title__image post-header__image" src="./img/user-icon.svg"
+                            alt="Фотография пользователя">
                         <h2 class="content-title__primary">Mateusz Wierzbicki</h2>
                         <span class="content-title__secondary">
                             <span class="post-header__time">3 hrs</span>
-                            <button class="post-header__time-options secondary-button" aria-label="Кнопка настройки отображения времени поста">
+                            <button class="post-header__time-options secondary-button"
+                                aria-label="Кнопка настройки отображения времени поста">
                                 <svg class="post-header__time-options-icon">
                                     <use xlink:href="./img/icons.svg#gear"></use>
                                 </svg>
@@ -228,7 +233,8 @@
 
         <aside class="aside"></aside>
     </div>
-    
+
 
 </body>
+
 </html>

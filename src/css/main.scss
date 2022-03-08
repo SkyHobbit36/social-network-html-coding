@@ -1,0 +1,17 @@
+@import "./common/variables.scss";
+@import "./common/extends";
+@import "./common/normalize.scss";
+@import "./common/fonts.scss";
+@import "./common/overall.scss";
+
+@import "./components/aside.scss";
+@import "./components/header.scss";
+@import "./components/main.scss";
+@import "./components/menu-sidebar.scss";
+
+@import "./elements/buttons.scss";
+@import "./elements/notification.scss";
+@import "./elements/post.scss";
+@import "./elements/search.scss";
+@import "./elements/user-link.scss";
+// @import "./elements/";
