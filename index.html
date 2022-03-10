@@ -30,10 +30,10 @@
                         </a>
                     </li>
                     <li class="header-navigation__item">
-                        <a href="#">Домой</a>
+                        <a href="#">Подписка</a>
                     </li>
                     <li class="header-navigation__item">
-                        <a href="#">Создать</a>
+                        <a href="#">Помощь</a>
                     </li>
                 </ul>
 
@@ -79,7 +79,7 @@
     </header>
 
 
-    <div class="content container">
+    <div class="content-placement container">
         <nav class="menu-sidebar">
             <a href="#" class=" menu-sidebar__user-link user-link" title="Страница пользователя">
                 <span class="user-link__photo user-link__photo_menu-sidebar">
@@ -173,29 +173,34 @@
 
         <main class="main">
             <section class="create-post content-block">
-                <h1 class="create-post__header">Create post</h1>
+                <h1 class="create-post__header">Создать запись</h1>
                 <div class="create-post__main">
                     <img src="./img/user-icon.svg" class="create-post__photo" alt="Фотография пользователя">
-                    <div class="create-post__textarea" contenteditable="true">What’s on your mind, Mateusz?</div>
+                    <div class="create-post__textarea" contenteditable="true">Как дела, Павел?</div>
+                    <button class=" create-post__send-message send-message-button" aria-label="Добавить сообщение">
+                        <svg class="send-message-button__icon">
+                            <use xlink:href="./img/icons.svg#sendMessage"></use>
+                        </svg>
+                    </button>
                 </div>
                 <footer class="create-post__footer">
                     <button class="create-post__action default-button">
                         <svg class="create-post__action-icon">
                             <use xlink:href="./img/icons.svg#photo"></use>
                         </svg>
-                        <span class="create-post__action-text">Photo/Video</span>
+                        <span class="create-post__action-text">Фото/Видео</span>
                     </button>
                     <button class="create-post__action default-button">
                         <svg class="create-post__action-icon">
                             <use xlink:href="./img/icons.svg#add-friend"></use>
                         </svg>
-                        <span class="create-post__action-text">Tag friends</span>
+                        <span class="create-post__action-text">Оповестить</span>
                     </button>
                     <button class="create-post__action default-button">
                         <svg class="create-post__action-icon">
                             <use xlink:href="./img/icons.svg#smile"></use>
                         </svg>
-                        <span class="create-post__action-text">Feeling/Activ...</span>
+                        <span class="create-post__action-text">Реакция</span>
                     </button>
                     <button class="create-post__action default-button">
                         <svg class="create-post__action-icon create-post__action-icon_points">
@@ -205,30 +210,128 @@
                 </footer>
             </section>
 
-            <article class="post-preview content-block">
-                <h1 class="visually-hidden"></h1>
-                <header class="post-preview__header post-header">
-                    <div class="content-title">
-                        <img class="content-title__image post-header__image" src="./img/user-icon.svg"
-                            alt="Фотография пользователя">
-                        <h2 class="content-title__primary">Mateusz Wierzbicki</h2>
-                        <span class="content-title__secondary">
-                            <span class="post-header__time">3 hrs</span>
+            <article class="post-preview content-block post">
+                <h1 class="visually-hidden">Пост</h1>
+                <header class="post-preview__header post-header content-title">
+                    <div class="content-title__image">
+                        <a href="#" title="Страница пользователя">
+                            <img class="post-header__user-image" src="./img/user-icon.svg" alt="Фотография пользователя">
+                        </a>
+                    </div>
+                    <div class="content-title__body">
+                        <h2 class="content-title__primary">
+                            <a href="#"  title="Страница пользователя">Павел Ширяев</a>
+                        </h2>
+                        <div class="content-title__secondary">
+                            <span class="post-header__time">3 часа</span>
+                            <span class="separator-point"></span>
+                            <button class="post-header__time-options secondary-button" aria-label="Кнопка настройки отображения времени поста">
+                                <svg class="post-header__time-options-icon">
+                                    <use xlink:href="./img/icons.svg#gear"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="post-header__options secondary-button" aria-label="Кнопка настройки отображения поста">
+                        <svg  class="post-header__options-icon">
+                            <use xlink:href="./img/icons.svg#points"></use>
+                        </svg>
+                    </button>
+                </header>
+                <div class="post-preview-body">
+                    <p class="post-preview-body__text">
+                        Did you know that all of this was made using only components and styles from Ant Desing <br/>
+                        System for Figma? <br /><br />
+                        Learn more: <a href="https://antforfigma.com">https://antforfigma.com</a>
+                    </p>
+                    <img src="./img/upload/IMG.png" alt="Изображение поста" class="post-preview-body__image">
+                </div>
+                <div class="post-preview__likes-count likes-count" title="Поставить лайк" aria-label="Количество лайков">
+                    <span class="likes-count__icon"></span>
+                    <span class="likes-count__text" aria-label="Количество лайков">23</span>
+                </div>
+                <footer class="post-preview__post-social post-social">
+                    <button class="post-social__button transperent-button js-like-button like-active">
+                        <svg class="post-social__icon">
+                            <use xlink:href="./img/icons.svg#like"></use>
+                        </svg>
+                        <span class="likes-count__text">Лайк</span>
+                    </button>
+                    <button class="post-social__button transperent-button">
+                        <svg class="post-social__icon">
+                            <use xlink:href="./img/icons.svg#messages"></use>
+                        </svg>
+                        <span class="likes-count__text">Комментарий</span>
+                    </button>
+                    <button class="post-social__button transperent-button">
+                        <svg class="post-social__icon">
+                            <use xlink:href="./img/icons.svg#share"></use>
+                        </svg>
+                        <span class="likes-count__text">Отправить</span>
+                    </button>
+                </footer>
+            </article>
+
+            <article class="post-preview content-block post">
+                <h1 class="visually-hidden">Пост</h1>
+                <header class="post-preview__header post-header content-title">
+                    <div class="content-title__image">
+                        <a href="#" title="Страница пользователя">
+                            <img class="post-header__user-image" src="./img/user-icon.svg" alt="Фотография пользователя">
+                        </a>
+                    </div>
+                    <div class="content-title__body">
+                        <h2 class="content-title__primary">
+                            <a href="#" title="Страница пользователя">Павел Ширяев</a>
+                        </h2>
+                        <div class="content-title__secondary">
+                            <span class="post-header__time">7 дней</span>
+                            <span class="separator-point"></span>
                             <button class="post-header__time-options secondary-button"
                                 aria-label="Кнопка настройки отображения времени поста">
                                 <svg class="post-header__time-options-icon">
                                     <use xlink:href="./img/icons.svg#gear"></use>
                                 </svg>
                             </button>
-                        </span>
-                        <button class="secondary-button" aria-label="Кнопка настройки отображения поста">
-                            <svg>
-                                <use xlink:href="./img/icons.svg#points"></use>
-                            </svg>
-                        </button>
+                        </div>
                     </div>
+                    <button class="post-header__options secondary-button" aria-label="Кнопка настройки отображения поста">
+                        <svg class="post-header__options-icon">
+                            <use xlink:href="./img/icons.svg#points"></use>
+                        </svg>
+                    </button>
                 </header>
+                <div class="post-preview-body">
+                    <p class="post-preview-body__text">
+                        📙 Want to implement type in your design system in Figma? This guide covers everything you should consider, from choosing the right typography scale to naming and organizing your text styles.
+                    </p>
+                </div>
+                <div class="post-preview__likes-count likes-count" title="Поставить лайк" aria-label="Количество лайков">
+                    <span class="likes-count__icon"></span>
+                    <span class="likes-count__text" aria-label="Количество лайков">11</span>
+                </div>
+                <footer class="post-preview__post-social post-social">
+                    <button class="post-social__button transperent-button js-like-button">
+                        <svg class="post-social__icon">
+                            <use xlink:href="./img/icons.svg#like"></use>
+                        </svg>
+                        <span class="likes-count__text">Лайк</span>
+                    </button>
+                    <button class="post-social__button transperent-button">
+                        <svg class="post-social__icon">
+                            <use xlink:href="./img/icons.svg#messages"></use>
+                        </svg>
+                        <span class="likes-count__text">Комментарий</span>
+                    </button>
+                    <button class="post-social__button transperent-button">
+                        <svg class="post-social__icon">
+                            <use xlink:href="./img/icons.svg#share"></use>
+                        </svg>
+                        <span class="likes-count__text">Отправить</span>
+                    </button>
+                </footer>
             </article>
+            
         </main>
 
         <aside class="aside"></aside>

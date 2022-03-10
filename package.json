@@ -1,7 +1,7 @@
 {
-  "name": "intensive-html-coding-social-network",
+  "name": "social-network-html-coding",
   "version": "1.0.0",
-  "description": "Интенсив верстка соцсети",
+  "description": "Верстка соцсети",
   "main": "index.html",
   "author": "SkyHobbit",
   "license": "MIT",

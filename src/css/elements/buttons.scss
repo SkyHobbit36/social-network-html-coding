@@ -43,12 +43,43 @@
   background-color: transparent;
   color: var(--main-text-color);
   fill: var(--main-text-color);
-  border-radius: 48px;
+  border-radius: 10px;
 
   &:hover {
     background-color: var(--main-text-color);
     color: var(--button-active-color);
 
     fill: var(--button-active-color);
+  }
+}
+
+.transperent-button {
+  @extend %button;
+
+  background-color: transparent;
+  color: var(--main-text-color);
+  fill: var(--main-text-color);
+
+  &:hover {
+    background-color: var(--background-color);
+  }
+}
+
+.send-message-button {
+  @extend %button;
+
+  background-color: var(--secondary-theme-color);
+  border-radius: 50%;
+
+  &:hover {
+    background-color: var(--main-theme-color);
+  }
+
+  // .send-message__icon
+
+  &__icon {
+    fill: var(--button-active-color);
+    width: 75%;
+    height: 75%;
   }
 }

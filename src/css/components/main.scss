@@ -4,6 +4,8 @@
 }
 
 .create-post {
+  // .create-post__header
+
   &__header {
     font-size: 14px;
     line-height: 22px;
@@ -15,6 +17,8 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.13);
   }
 
+  // .create-post__main
+
   &__main {
     display: flex;
     align-items: center;
@@ -25,22 +29,36 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.09);
   }
 
+  // .create-post__photo
+
   &__photo {
     width: 40px;
     height: 40px;
     margin-right: 16px;
   }
 
+  // .create-post__textarea
+
   &__textarea {
     width: 100%;
     height: 100%;
     border: none;
     outline: none;
-
-    &::placeholder {
-      color: var(--secondary-text-color);
-    }
+    margin-right: 16px;
+    overflow-wrap: anywhere;
   }
+
+  // .create-post__send-message
+
+  &__send-message {
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  // .create-post__footer
 
   &__footer {
     padding: 16px;
@@ -48,25 +66,32 @@
     align-items: center;
   }
 
+  // .create-post__action
+
   &__action {
     padding: 9px 14px;
     border-radius: 48px;
     margin-right: 8px;
+  }
 
-    &-icon {
-      width: 20px;
-      height: 20px;
-      margin-right: 8px;
+  // .create-post__action-icon
 
-      &_points {
-        margin-right: 0;
-      }
+  &__action-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    // .create-post__action-icon_points
+
+    &_points {
+      margin-right: 0;
     }
+  }
 
-    &-text {
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 22px;
-    }
+  // .create-post__action-text
+
+  &__action-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
   }
 }

@@ -7,6 +7,14 @@ body {
   background-color: var(--background-color);
 }
 
+a {
+  color: var(--secondary-theme-color);
+
+  &:visited {
+    color: var(--secondary-theme-color);
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -23,21 +31,7 @@ body {
   margin: 0 auto;
 }
 
-.content {
-  height: calc(100vh - 48px);
-  display: grid;
-  grid-template-columns: 192px 1fr 384px;
-  grid-gap: 18px;
-  padding-top: 15px;
-}
-
-.content-block {
-  background: #ffffff;
-  box-shadow: 0px 2px 8px var(--shadow-color);
-  border-radius: 4px;
-  margin-bottom: 16px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+.icon {
+  max-width: 20px;
+  max-height: 20px;
 }
