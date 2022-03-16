@@ -15,6 +15,14 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  // .content-block__title
+
+  &__title {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+  }
 }
 
 .content-title {
@@ -27,6 +35,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+
+    a,
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      object-fit: cover;
+    }
   }
 
   // .content-title__body
@@ -60,6 +82,9 @@
   // .content-title__secondary
 
   &__secondary {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--secondary-text-color);
     display: flex;
     align-items: center;
   }

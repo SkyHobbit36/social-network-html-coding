@@ -16,17 +16,18 @@
 
   // .post-preview__post-social
 
-  &__post-social {
-    border-top: 1px solid #e8e8e8;
-  }
+  // &__post-social {
+  //   border-top: 1px solid #e8e8e8;
+  // }
 }
 
 .post-header {
-  // .post-header__user-image
+  // .post-header__image
 
-  &__user-image {
+  &__image {
     width: 48px;
     height: 48px;
+    flex-shrink: 0;
   }
 
   // .post-header__time
@@ -50,19 +51,6 @@
   &__time-options-icon {
     width: 12px;
     height: 12px;
-  }
-
-  // .post-header__options
-
-  &__options {
-    max-height: 30px;
-    padding: 16px 10px;
-  }
-  // .post-header__options-icon
-
-  &__options-icon {
-    width: 16px;
-    height: 3px;
   }
 }
 
@@ -93,7 +81,7 @@
   // .post-social__button
 
   &__button {
-    padding: 16px;
+    padding: 12px;
     border-radius: 0;
     width: 33.33%;
     justify-content: center;
