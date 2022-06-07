@@ -1,6 +1,4 @@
-
 const menuSidbarItemList = document.querySelectorAll('.menu-sidebar__item')
-
 menuSidbarItemList.forEach(item => {
     item.addEventListener('click', () => {
         menuSidbarItemList.forEach(item => {
@@ -11,19 +9,14 @@ menuSidbarItemList.forEach(item => {
     })
 });
 
-
-const createPostArea = document.querySelector('.create-post__textarea')
+const createPostArea = document.querySelector('.send-massege__textarea')
 const clearPostText = () => {
     createPostArea.textContent = ''
     createPostArea.removeEventListener('click', clearPostText)
 }
 createPostArea.addEventListener('click', clearPostText)
 
-
-
-
 document.querySelectorAll('.post').forEach(post => {
-
     const likesCount = post.querySelector('.likes-count__text')
     const likeButton = post.querySelector('.js-like-button')
     const svg = likeButton.querySelector('use')
@@ -35,16 +28,14 @@ document.querySelectorAll('.post').forEach(post => {
     const likeCounter = operator => {
         let value = Number(likesCount.textContent.trim())
 
-        if (operator == 'plus') {
+        if (operator === 'plus') {
             value++
-        } else if (operator == 'minus') {
+        } else if (operator === 'minus') {
             value--
         }
-        console.log(value);
+        
         likesCount.textContent = value
     }
-
-
 
     const likeToggle = () => {
         const svgUrl = svg.getAttribute('xlink:href')
@@ -62,6 +53,5 @@ document.querySelectorAll('.post').forEach(post => {
         likeButton.classList.toggle('like-active')
         likeToggle()
     })
-
-});
+})
 
