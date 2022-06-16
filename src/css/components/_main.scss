@@ -2,6 +2,7 @@
   width: calc(100% - 6px);
   margin-right: 6px;
 }
+
 .create-post {
   // .create-post__title
 
@@ -31,6 +32,7 @@
     margin-right: 16px;
   }
 }
+
 .send-massege {
   display: flex;
   align-items: center;
@@ -61,13 +63,15 @@
   padding: 0 16px 16px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
 
   // .create-post-footer__action
 
   &__action {
     padding: 9px 14px;
     border-radius: 48px;
-    margin-right: 8px;
+    // margin-right: 8px;
   }
 
   // .create-post-footer__icon

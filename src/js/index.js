@@ -33,7 +33,7 @@ document.querySelectorAll('.post').forEach(post => {
         } else if (operator === 'minus') {
             value--
         }
-        
+
         likesCount.textContent = value
     }
 
@@ -55,3 +55,8 @@ document.querySelectorAll('.post').forEach(post => {
     })
 })
 
+// const menuButton = document.querySelector('.show-menu-button')
+// const menu = document.querySelector('.menu-sidebar')
+// menuButton.addEventListener('click', (event) => {
+//     menu.classList.toggle('menu-sidebar--hidden')
+// })

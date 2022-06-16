@@ -1,9 +1,17 @@
 .content-placement {
   height: calc(100vh - 48px);
   display: grid;
-  grid-template-columns: 192px 1fr 384px;
+  grid-template-columns: 192px 1fr 33%;
   grid-gap: 18px;
   padding-top: 15px;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: 192px 1fr;
+  }
+
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .content-block {

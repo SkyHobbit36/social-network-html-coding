@@ -1,20 +1,20 @@
-@import "./common/variables.scss";
+@import "./common/variables";
 @import "./common/extends";
-@import "./common/normalize.scss";
-@import "./common/fonts.scss";
-@import "./common/overall.scss";
+@import "./common/normalize";
+@import "./common/fonts";
+@import "./common/overall";
 
-@import "./elements/buttons.scss";
-@import "./elements/radio-button.scss";
-@import "./elements/notification.scss";
-@import "./elements/post.scss";
-@import "./elements/search.scss";
-@import "./elements/user-link.scss";
-@import "./elements/separators.scss";
-@import "./elements/content.scss";
-@import "./elements/likes-count.scss";
+@import "./elements/buttons";
+@import "./elements/radio-button";
+@import "./elements/notification";
+@import "./elements/post";
+@import "./elements/search";
+@import "./elements/user-link";
+@import "./elements/separators";
+@import "./elements/content";
+@import "./elements/likes-count";
 
-@import "./components/header.scss";
-@import "./components/main.scss";
-@import "./components/menu-sidebar.scss";
-@import "./components/aside.scss";
+@import "./components/header";
+@import "./components/main";
+@import "./components/menu-sidebar";
+@import "./components/aside";

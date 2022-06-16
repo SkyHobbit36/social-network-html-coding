@@ -2,6 +2,22 @@
   @extend %navigation;
   width: 192px;
   color: var(--accent-text-color);
+  background-color: var(--background-color);
+
+  @media (max-width: $mobile) {
+    position: absolute;
+    overflow: auto;
+    z-index: 3;
+    height: 100%;
+    padding: 10px;
+    width: 100%;
+  }
+
+
+  //.menu-sidebar--hidden
+  &--hidden {
+    display: none;
+  }
 
   a {
     color: var(--accent-text-color);

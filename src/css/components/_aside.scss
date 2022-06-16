@@ -1,5 +1,9 @@
 .aside {
   width: 100%;
+
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
 }
 
 .header-stories {
@@ -91,6 +95,7 @@
         align-items: center;
         justify-content: center;
       }
+
       svg {
         fill: var(--secondary-theme-color);
       }
@@ -159,6 +164,7 @@
   &__body {
     padding: 16px;
   }
+
   // .fanpage__main
 
   &__main {
