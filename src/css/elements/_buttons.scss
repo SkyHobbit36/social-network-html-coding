@@ -95,3 +95,27 @@
     height: 3px;
   }
 }
+
+.burger-button {
+  @extend %button;
+  height: 20px;
+  width: 40px;
+  padding: 3px 10px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover .burger-button__icon {
+    fill: var(--header-icons-color);
+  }
+
+
+  // .burger-button__icon
+
+  &__icon {
+    width: 19px;
+    height: 16px;
+    fill: var(--button-active-color);
+  }
+}

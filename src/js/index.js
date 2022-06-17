@@ -55,8 +55,34 @@ document.querySelectorAll('.post').forEach(post => {
     })
 })
 
-// const menuButton = document.querySelector('.show-menu-button')
-// const menu = document.querySelector('.menu-sidebar')
-// menuButton.addEventListener('click', (event) => {
-//     menu.classList.toggle('menu-sidebar--hidden')
-// })
+const burgerButton = document.querySelector('.burger-button')
+const menu = document.querySelector('.menu-sidebar')
+burgerButton.addEventListener('click', (event) => {
+    menu.classList.toggle('hide')
+})
+const notification = document.querySelector('.notification')
+
+const headerNavigationList = document.querySelector('.header-navigation__list')
+
+const navigation = document.querySelector('.header-navigation')
+const footer = document.querySelector('.footer')
+
+const resizeWindow = () => {
+    if(document.documentElement.clientWidth <= 660) {
+        footer.append(notification)
+        menu.classList.add('hide')
+        headerNavigationList.classList.add('hide')
+        
+        burgerButton.classList.remove('hide')
+
+    } else {
+        navigation.append(notification)
+        headerNavigationList.classList.remove('hide')
+
+        menu.classList.remove('hide')
+        burgerButton.classList.add('hide')
+
+    }
+}
+resizeWindow()
+window.addEventListener('resize', resizeWindow) 

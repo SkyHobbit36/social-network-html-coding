@@ -450,7 +450,11 @@ button[aria-label]:focus:after {
   max-height: 20px;
 }
 
-.send-message-button, .transperent-button, .secondary-button, .default-button, .see-more-button {
+.hide {
+  display: none !important;
+}
+
+.burger-button, .send-message-button, .transperent-button, .secondary-button, .default-button, .see-more-button {
   border: none;
   display: flex;
   align-items: center;
@@ -524,6 +528,24 @@ button[aria-label]:focus:after {
 .dotted-button__icon {
   width: 16px;
   height: 3px;
+}
+
+.burger-button {
+  height: 20px;
+  width: 40px;
+  padding: 3px 10px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.burger-button:hover .burger-button__icon {
+  fill: var(--header-icons-color);
+}
+.burger-button__icon {
+  width: 19px;
+  height: 16px;
+  fill: var(--button-active-color);
 }
 
 .radio {
@@ -962,9 +984,6 @@ button[aria-label]:focus:after {
     width: 100%;
   }
 }
-.menu-sidebar--hidden {
-  display: none;
-}
 .menu-sidebar a {
   color: var(--accent-text-color);
 }
@@ -1183,4 +1202,21 @@ button[aria-label]:focus:after {
   border: 1px solid #d9d9d9;
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.footer {
+  background-color: var(--main-theme-color);
+  padding: 15px 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  top: calc(100vh - 52px);
+  z-index: 10;
+}
+@media screen and (max-width: 660px) {
+  .footer {
+    display: flex;
+  }
 }
